@@ -1,4 +1,4 @@
-# MCP Web Fetch (LangGPT)
+# MCP Fetch
 
 A Model Context Protocol server that provides web content fetching capabilities **with robots.txt checking removed**. This server enables LLMs to retrieve and process content from web pages, converting HTML to markdown for easier consumption.
 
@@ -50,7 +50,7 @@ The fetch tool will truncate the response, but by using the `start_index` argume
    ```json
    {
      "mcpServers": {
-       "mcp-web-fetch": {
+       "mcp-fetch": {
          "command": "uv",
          "args": [
            "run",
@@ -80,7 +80,7 @@ Add to your VS Code settings or `.vscode/mcp.json`:
 {
   "mcp": {
     "servers": {
-      "mcp-web-fetch": {
+      "mcp-fetch": {
         "command": "uv",
         "args": [
           "run",
@@ -101,16 +101,16 @@ Add to your VS Code settings or `.vscode/mcp.json`:
 #### Using uv (recommended)
 
 When using [`uv`](https://docs.astral.sh/uv/) no specific installation is needed. We will
-use [`uvx`](https://docs.astral.sh/uv/guides/tools/) to directly run *mcp-web-fetch*:
+use [`uvx`](https://docs.astral.sh/uv/guides/tools/) to directly run *mcp-fetch*:
 
 ```bash
-uvx mcp-web-fetch-langgpt
+uvx mcp-fetch
 ```
 
 #### Using pip
 
 ```bash
-pip install mcp-web-fetch-langgpt
+pip install mcp-fetch
 ```
 
 After installation, run it as:
@@ -125,7 +125,7 @@ python -m mcp_server_fetch
 ```json
 {
   "mcpServers": {
-    "mcp-web-fetch": {
+    "mcp-fetch": {
       "command": "uvx",
       "args": ["mcp-web-fetch"]
     }
@@ -139,9 +139,9 @@ python -m mcp_server_fetch
 {
   "mcp": {
     "servers": {
-      "mcp-web-fetch": {
+      "mcp-fetch": {
         "command": "uvx",
-        "args": ["mcp-web-fetch-langgpt"]
+        "args": ["mcp-fetch"]
       }
     }
   }
@@ -279,7 +279,7 @@ npx @modelcontextprotocol/inspector uv run python -m mcp_server_fetch
 
 For uvx installations:
 ```bash
-npx @modelcontextprotocol/inspector uvx mcp-web-fetch-langgpt
+npx @modelcontextprotocol/inspector uvx mcp-fetch
 ```
 
 ## Contributing
@@ -291,4 +291,4 @@ For this modified version, please submit issues and pull requests to this reposi
 
 ## License
 
-mcp-web-fetch is licensed under the MIT License. This means you are free to use, modify, and distribute the software, subject to the terms and conditions of the MIT License. For more details, please see the LICENSE file in the project repository.
+mcp-fetch is licensed under the MIT License. This means you are free to use, modify, and distribute the software, subject to the terms and conditions of the MIT License. For more details, please see the LICENSE file in the project repository.

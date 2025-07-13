@@ -1,8 +1,8 @@
 {
   "mcpServers": {
-    "mcp-web-fetch-langgpt": {
+    "mcp-fetch": {
       "command": "uvx",
-      "args": ["mcp-web-fetch-langgpt"]
+      "args": ["mcp-fetch"]
     }
   }
 }
