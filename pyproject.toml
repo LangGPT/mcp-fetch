@@ -1,5 +1,5 @@
 [project]
-name = "mcp-web-fetch"
+name = "mcp-web-fetch-langgpt"
 version = "0.6.3"
 description = "A Model Context Protocol server providing tools to fetch and convert web content for usage by LLMs (robots.txt checking removed)"
 readme = "README.md"
@@ -25,7 +25,7 @@ dependencies = [
 ]
 
 [project.scripts]
-mcp-web-fetch = "mcp_server_fetch:main"
+mcp-web-fetch-langgpt = "mcp_server_fetch:main"
 
 [build-system]
 requires = ["hatchling"]

@@ -1,15 +1,8 @@
 {
   "mcpServers": {
-    "mcp-web-fetch": {
-      "command": "uv",
-      "args": [
-        "run", 
-        "--directory", 
-        "/Users/zephyr/Dev/MCP/mcp_example/fetch", 
-        "python", 
-        "-m", 
-        "mcp_server_fetch"
-      ]
+    "mcp-web-fetch-langgpt": {
+      "command": "uvx",
+      "args": ["mcp-web-fetch-langgpt"]
     }
   }
 }

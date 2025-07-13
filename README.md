@@ -1,4 +1,4 @@
-# MCP Web Fetch
+# MCP Web Fetch (LangGPT)
 
 A Model Context Protocol server that provides web content fetching capabilities **with robots.txt checking removed**. This server enables LLMs to retrieve and process content from web pages, converting HTML to markdown for easier consumption.
 
@@ -104,13 +104,13 @@ When using [`uv`](https://docs.astral.sh/uv/) no specific installation is needed
 use [`uvx`](https://docs.astral.sh/uv/guides/tools/) to directly run *mcp-web-fetch*:
 
 ```bash
-uvx mcp-web-fetch
+uvx mcp-web-fetch-langgpt
 ```
 
 #### Using pip
 
 ```bash
-pip install mcp-web-fetch
+pip install mcp-web-fetch-langgpt
 ```
 
 After installation, run it as:
@@ -141,7 +141,7 @@ python -m mcp_server_fetch
     "servers": {
       "mcp-web-fetch": {
         "command": "uvx",
-        "args": ["mcp-web-fetch"]
+        "args": ["mcp-web-fetch-langgpt"]
       }
     }
   }
@@ -279,7 +279,7 @@ npx @modelcontextprotocol/inspector uv run python -m mcp_server_fetch
 
 For uvx installations:
 ```bash
-npx @modelcontextprotocol/inspector uvx mcp-web-fetch
+npx @modelcontextprotocol/inspector uvx mcp-web-fetch-langgpt
 ```
 
 ## Contributing
