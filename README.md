@@ -30,8 +30,8 @@ The fetch tool will truncate the response, but by using the `start_index` argume
 
 1. **Clone or download the source code:**
    ```bash
-   git clone <repository-url>
-   cd mcp-web-fetch
+   git clone https://github.com/LangGPT/mcp-fetch.git
+   cd mcp-fetch
    ```
 
 2. **Install dependencies using uv:**
@@ -55,7 +55,7 @@ The fetch tool will truncate the response, but by using the `start_index` argume
          "args": [
            "run",
            "--directory",
-           "/path/to/your/mcp-web-fetch",
+           "/path/to/your/mcp-fetch",
            "python",
            "-m",
            "mcp_server_fetch"
@@ -85,7 +85,7 @@ Add to your VS Code settings or `.vscode/mcp.json`:
         "args": [
           "run",
           "--directory",
-          "/path/to/your/mcp-web-fetch",
+          "/path/to/your/mcp-fetch",
           "python",
           "-m",
           "mcp_server_fetch"
@@ -127,7 +127,7 @@ python -m mcp_server_fetch
   "mcpServers": {
     "mcp-fetch": {
       "command": "uvx",
-      "args": ["mcp-web-fetch"]
+      "args": ["mcp-fetch"]
     }
   }
 }
@@ -224,7 +224,7 @@ npx @modelcontextprotocol/inspector uv run python -m mcp_server_fetch
 3. **Create GitHub repository and push:**
    ```bash
    # Create repository on GitHub first, then:
-   git remote add origin https://github.com/langgpt/mcp-web-fetch.git
+   git remote add origin https://github.com/LangGPT/mcp-fetch.git
    git push -u origin main
    ```
 
@@ -232,16 +232,16 @@ npx @modelcontextprotocol/inspector uv run python -m mcp_server_fetch
    - Go to your repository on GitHub
    - Click "Releases" → "Create a new release"
    - Tag version: `v0.6.3`
-   - Release title: `v0.6.3 - MCP Web Fetch`
+   - Release title: `v0.6.3 - MCP Fetch`
    - Describe your changes
    - Publish release
 
 ### Building Docker Image
 
 ```bash
-docker build -t mcp-web-fetch .
-docker tag mcp-web-fetch langgpt/mcp-web-fetch:latest
-docker push langgpt/mcp-web-fetch:latest
+docker build -t mcp-fetch .
+docker tag mcp-fetch LangGPT/mcp-fetch:latest
+docker push LangGPT/mcp-fetch:latest
 ```
 
 ## Customization
@@ -284,10 +284,7 @@ npx @modelcontextprotocol/inspector uvx mcp-fetch
 
 ## Contributing
 
-This is a modified version of the original mcp-server-fetch. For contributing to the original project, see:
-https://github.com/modelcontextprotocol/servers
-
-For this modified version, please submit issues and pull requests to this repository.
+We encourage contributions to help expand and improve mcp-fetch. Whether you want to add new tools, enhance existing functionality, or improve documentation, your input is valuable.
 
 ## License
 
