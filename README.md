@@ -41,7 +41,7 @@ The fetch tool will truncate the response, but by using the `start_index` argume
 
 3. **Test the server:**
    ```bash
-   uv run python -m mcp_server_fetch --help
+   uv run python -m mcp_fetch --help
    ```
 
 ### Using with Claude Desktop (Local Source)
@@ -58,7 +58,7 @@ The fetch tool will truncate the response, but by using the `start_index` argume
            "/path/to/your/mcp-fetch",
            "python",
            "-m",
-           "mcp_server_fetch"
+           "mcp_fetch"
          ]
        }
      }
@@ -88,7 +88,7 @@ Add to your VS Code settings or `.vscode/mcp.json`:
           "/path/to/your/mcp-fetch",
           "python",
           "-m",
-          "mcp_server_fetch"
+          "mcp_fetch"
         ]
       }
     }
@@ -115,7 +115,7 @@ pip install mcp-fetch
 
 After installation, run it as:
 ```bash
-python -m mcp_server_fetch
+python -m mcp_fetch
 ```
 
 ### Package Manager Configuration
@@ -172,18 +172,18 @@ python -m mcp_server_fetch
 
 Test the server locally:
 ```bash
-uv run python -m mcp_server_fetch
+uv run python -m mcp_fetch
 ```
 
 Use the MCP inspector for debugging:
 ```bash
-npx @modelcontextprotocol/inspector uv run python -m mcp_server_fetch
+npx @modelcontextprotocol/inspector uv run python -m mcp_fetch
 ```
 
 ### Making Changes
 
-1. Edit the source code in `src/mcp_server_fetch/`
-2. Test your changes with `uv run python -m mcp_server_fetch`
+1. Edit the source code in `src/mcp_fetch/`
+2. Test your changes with `uv run python -m mcp_fetch`
 3. Update version in `pyproject.toml` if needed
 4. Run tests and linting
 
@@ -274,7 +274,7 @@ You can use the MCP inspector to debug the server:
 
 For local development:
 ```bash
-npx @modelcontextprotocol/inspector uv run python -m mcp_server_fetch
+npx @modelcontextprotocol/inspector uv run python -m mcp_fetch
 ```
 
 For uvx installations:
