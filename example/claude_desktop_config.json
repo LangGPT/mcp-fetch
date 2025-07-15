@@ -1,0 +1,15 @@
+{
+  "mcpServers": {
+    "mcp-fetch-example": {
+      "command": "uv",
+      "args": [
+        "run",
+        "--directory",
+        ".",
+        "python",
+        "-m",
+        "mcp_fetch"
+      ]
+    }
+  }
+}
