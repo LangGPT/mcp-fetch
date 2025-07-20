@@ -20,7 +20,8 @@ share/python-wheels/
 *.egg-info/
 .installed.cfg
 *.egg
-MANIFEST
+MANIFEST.in
+*.whl
 
 # Virtual environments
 .env
@@ -31,12 +32,18 @@ ENV/
 env.bak/
 venv.bak/
 
-# IDEs
+# UV package manager
+.uv/
+
+# IDEs and Editors
 .vscode/
 .idea/
+.spyderproject
+.spyproject
 *.swp
 *.swo
 *~
+.vim/
 
 # Claude Code files
 CLAUDE.md
@@ -53,21 +60,37 @@ Thumbs.db
 
 # Logs
 *.log
+logs/
 
 # Temporary files
 *.tmp
 *.temp
+.tmp/
 
-# UV
-.uv/
-
-# Development
+# Testing and Development
 .pytest_cache/
 .coverage
+.coverage.*
 htmlcov/
 .tox/
+.nox/
 .mypy_cache/
+.dmypy.json
+dmypy.json
 .ruff_cache/
+.pytype/
 
-# prompts directory (contains task instructions)
+# Config files that might contain sensitive data
+*config_debug.json
+.env.local
+.env.development
+.env.test
+.env.production
+
+# Documentation builds
+docs/_build/
+site/
+
+# Project specific
 prompts/
+.python-version
