@@ -7,6 +7,10 @@ This is a modified version of the original mcp-server-fetch that removes all rob
 > [!CAUTION]
 > This server can access local/internal IP addresses and may represent a security risk. Exercise caution when using this MCP server to ensure this does not expose any sensitive data. Additionally, this version ignores robots.txt restrictions which may violate some websites' access policies.
 
+<a href="https://glama.ai/mcp/servers/@LangGPT/mcp-fetch">
+  <img width="380" height="200" src="https://glama.ai/mcp/servers/@LangGPT/mcp-fetch/badge" alt="Fetch MCP server" />
+</a>
+
 The fetch tool will truncate the response, but by using the `start_index` argument, you can specify where to start the content extraction. This lets models read a webpage in chunks, until they find the information they need.
 
 ## Available Tools
